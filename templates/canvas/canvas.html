@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCK Place - 거대한 캔버스</title>
+    <link rel="stylesheet" href="/static/css/canvas.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🎨 CCK Place</h1>
+            <p>자유롭게 그려보세요! 로그인 없이 무제한으로 사용 가능합니다.</p>
+        </header>
+        
+        <div class="canvas-container">
+            <div class="toolbar">
+                <div class="color-picker">
+                    <label for="color">색상 선택:</label>
+                    <input type="color" id="color" value="#FF0000">
+                </div>
+                <div class="canvas-info">
+                    <span>캔버스 크기: 1000 x 1000</span>
+                    <span id="pixel-count">픽셀 수: 0</span>
+                </div>
+            </div>
+            
+            <div class="canvas-wrapper">
+                <canvas id="canvas" width="1000" height="1000"></canvas>
+                <div class="zoom-controls">
+                    <button id="zoom-in">🔍+</button>
+                    <button id="zoom-out">🔍-</button>
+                    <button id="reset-view">🏠</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h3>사용법:</h3>
+            <ul>
+                <li>마우스로 캔버스를 클릭하여 픽셀을 그립니다</li>
+                <li>색상 선택기에서 원하는 색상을 선택하세요</li>
+                <li>확대/축소 버튼으로 캔버스를 탐색하세요</li>
+                <li>모든 변경사항은 실시간으로 다른 사용자와 공유됩니다</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="/static/js/canvas.js"></script>
+</body>
+</html>
